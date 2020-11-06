@@ -18,7 +18,7 @@
                 Value="125" />
         </Style>
         <Style
-            TargetType="Border">
+            TargetType="Border" x:Key="bordesImagenes">
             <Setter
                 Property="BorderBrush"
                 Value="Black" />
@@ -50,7 +50,8 @@
     </Window.Resources>
     
     <StackPanel>
-        <Border>
+        <Border
+            Style="{StaticResource bordesImagenes}">
             <StackPanel>
                 <StackPanel.Background>
                     <LinearGradientBrush
@@ -84,7 +85,8 @@
             </StackPanel>
         </Border>
 
-        <Border>
+        <Border
+            Style="{StaticResource bordesImagenes}">
             <StackPanel>
                 <StackPanel.Background>
                     <LinearGradientBrush
